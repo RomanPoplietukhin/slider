@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Swiper
+          slidesPerView={'auto'}
+          spaceBetween={30}
+      >
+        <SwiperSlide>1</SwiperSlide>
+        <SwiperSlide>2</SwiperSlide>
+        <SwiperSlide>3</SwiperSlide>
+        <SwiperSlide>4</SwiperSlide>
+        <SwiperSlide>5</SwiperSlide>
+        <SwiperSlide>6</SwiperSlide>
+      </Swiper>
     </div>
   );
 }
